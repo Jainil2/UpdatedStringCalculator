@@ -80,4 +80,10 @@ public class AppTest {
         //Numbers greater than 1000
         assertEquals(2,stringcalculator.add("1001,2"));
     }
+
+    @Test
+    public void TestCase7() {
+        //Custom delimiter of any length
+        assertEquals(6,stringcalculator.add("//[**@]\n1**@2**@3"));
+    }
 }
