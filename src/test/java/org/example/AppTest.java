@@ -64,4 +64,20 @@ public class AppTest {
             assertEquals("Negatives not allowed: [-1]", e.getMessage());
         }
     }
+
+    @Test
+    public void TestCase5() {
+        //Multiple negative numbers
+        try {
+            stringcalculator.add("-1,-2,3");
+        } catch (RuntimeException e) {
+            assertEquals("Negatives not allowed: [-1, -2]", e.getMessage());
+        }
+    }
+
+    @Test
+    public void TestCase6() {
+        //Numbers greater than 1000
+        assertEquals(2,stringcalculator.add("1001,2"));
+    }
 }

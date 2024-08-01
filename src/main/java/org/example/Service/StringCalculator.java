@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StringCalculator {
+    private static final int MAX_NUMBER = 1000;
     public int add(String numbers) {
         try {
             if (numbers.isEmpty()) {
@@ -34,7 +35,7 @@ public class StringCalculator {
                     int value = Integer.parseInt(num.trim());
                     if (value < 0) {
                         negatives.add(value);
-                    } else {
+                    } else if(value <= MAX_NUMBER) {
                         sum += value;
                     }
                 }
