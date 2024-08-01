@@ -39,6 +39,7 @@ public class AppTest {
 
     @Test
     public void TestCase14() {
-
+        //unknown numbers
+        assertEquals(26,stringcalculator.add("1,2,3,5,7,8"));
     }
 }
