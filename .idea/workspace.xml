@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cfb70d2-1e87-459a-b6cc-a7dd4639308c" name="Changes" comment="New line contain String Test Case Completed.">
+    <list default="true" id="8cfb70d2-1e87-459a-b6cc-a7dd4639308c" name="Changes" comment="Custom delimiter String Test Case Completed.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/NegativeNumberException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
     </list>
@@ -52,6 +53,8 @@
     "JUnit.AppTest.TestCase11.executor": "Run",
     "JUnit.AppTest.TestCase12.executor": "Run",
     "JUnit.AppTest.TestCase13.executor": "Run",
+    "JUnit.AppTest.TestCase3.executor": "Run",
+    "JUnit.AppTest.TestCase4.executor": "Run",
     "JUnit.AppTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -60,7 +63,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AppTest.TestCase3">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UpdatedStringCalculator" />
       <extension name="coverage">
@@ -87,22 +90,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
       <option name="METHOD_NAME" value="TestCase11" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.TestCase12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UpdatedStringCalculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
-      <option name="METHOD_NAME" value="TestCase12" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,13 +127,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.TestCase4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UpdatedStringCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
+      <option name="METHOD_NAME" value="TestCase4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest.TestCase3" />
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest.TestCase4" />
+        <item itemvalue="JUnit.AppTest.TestCase3" />
         <item itemvalue="JUnit.AppTest.TestCase13" />
         <item itemvalue="JUnit.AppTest.TestCase11" />
-        <item itemvalue="JUnit.AppTest.TestCase12" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722521044191</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Custom delimiter String Test Case Completed.">
+      <option name="closed" value="true" />
+      <created>1722521406230</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722521406230</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +241,7 @@
     <MESSAGE value="Two digit String Test Case Completed." />
     <MESSAGE value="Unknown number of digit String Test Case Completed." />
     <MESSAGE value="New line contain String Test Case Completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="New line contain String Test Case Completed." />
+    <MESSAGE value="Custom delimiter String Test Case Completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Custom delimiter String Test Case Completed." />
   </component>
 </project>

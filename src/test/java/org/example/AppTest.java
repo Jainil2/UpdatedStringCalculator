@@ -54,4 +54,14 @@ public class AppTest {
         // Custom delimiter with new lines
         assertEquals(3,stringcalculator.add("//;\n1;2"));
     }
+
+    @Test
+    public void TestCase4() {
+        //Negative number
+        try {
+            stringcalculator.add("-1,2");
+        } catch (RuntimeException e) {
+            assertEquals("Negatives not allowed: [-1]", e.getMessage());
+        }
+    }
 }

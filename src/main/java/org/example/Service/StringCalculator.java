@@ -1,5 +1,8 @@
 package org.example.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StringCalculator {
     public int add(String numbers) {
         try {
@@ -24,11 +27,21 @@ public class StringCalculator {
             // Split the input string by the delimiter
             String[] numArray = numbers.split(delimiter);
 
+            List<Integer> negatives = new ArrayList<>();
             int sum = 0;
             for (String num : numArray) {
                 if (!num.trim().isEmpty()) {
-                    sum += Integer.parseInt(num.trim());
+                    int value = Integer.parseInt(num.trim());
+                    if (value < 0) {
+                        negatives.add(value);
+                    } else {
+                        sum += value;
+                    }
                 }
+            }
+
+            if (!negatives.isEmpty()) {
+                throw new NegativeNumberException("Negatives not allowed: " + negatives);
             }
 
             return sum;
