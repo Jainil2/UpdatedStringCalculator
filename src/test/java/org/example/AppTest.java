@@ -27,7 +27,8 @@ public class AppTest {
 
     @Test
     public void TestCase12() {
-
+        //single number
+        assertEquals(1,stringcalculator.add("1"));
     }
 
     @Test
