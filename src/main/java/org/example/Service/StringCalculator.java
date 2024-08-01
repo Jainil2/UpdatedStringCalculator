@@ -8,6 +8,8 @@ public class StringCalculator {
                 return 0;
             }
 
+            numbers = numbers.replace("\n", ",");
+
             // Split the input string by commas
             String[] numArray = numbers.split(",");
 

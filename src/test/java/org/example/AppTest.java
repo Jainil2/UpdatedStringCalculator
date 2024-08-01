@@ -42,4 +42,10 @@ public class AppTest {
         //unknown numbers
         assertEquals(26,stringcalculator.add("1,2,3,5,7,8"));
     }
+
+    @Test
+    public void TestCase2() {
+        //new line between numbers
+        assertEquals(6,stringcalculator.add("1\n2,3"));
+    }
 }
