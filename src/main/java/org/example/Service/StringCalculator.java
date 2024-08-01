@@ -3,25 +3,37 @@ package org.example.Service;
 public class StringCalculator {
     public int add(String numbers) {
         try {
-            // Handle empty string case
             if (numbers.isEmpty()) {
                 return 0;
             }
 
-            numbers = numbers.replace("\n", ",");
+            String delimiter = ",";
+            if (numbers.startsWith("//")) {
+                int delimiterIndex = numbers.indexOf('\n');
+                if (delimiterIndex != -1) {
+                    delimiter = numbers.substring(2, delimiterIndex);
+                    numbers = numbers.substring(delimiterIndex + 1);
+                } else {
+                    throw new IllegalArgumentException("Invalid delimiter format.");
+                }
+            }
 
-            // Split the input string by commas
-            String[] numArray = numbers.split(",");
+            // Replace new lines with the delimiter
+            numbers = numbers.replace("\n", delimiter);
+
+            // Split the input string by the delimiter
+            String[] numArray = numbers.split(delimiter);
 
             int sum = 0;
             for (String num : numArray) {
-                sum += Integer.parseInt(num.trim());
+                if (!num.trim().isEmpty()) {
+                    sum += Integer.parseInt(num.trim());
+                }
             }
 
             return sum;
         } catch (NumberFormatException e) {
-            // Handle invalid input format
-            throw new IllegalArgumentException("Invalid input: Input string contains non-numeric characters.");
+            throw new IllegalArgumentException("Invalid input: Input string contains non-numeric characters or improper format.");
         }
     }
 }

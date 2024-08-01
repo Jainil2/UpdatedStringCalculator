@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cfb70d2-1e87-459a-b6cc-a7dd4639308c" name="Changes" comment="Two digit String Test Case Completed.">
+    <list default="true" id="8cfb70d2-1e87-459a-b6cc-a7dd4639308c" name="Changes" comment="New line contain String Test Case Completed.">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
     </list>
@@ -60,7 +60,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.AppTest.TestCase3">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UpdatedStringCalculator" />
       <extension name="coverage">
@@ -124,8 +124,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.TestCase3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UpdatedStringCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
+      <option name="METHOD_NAME" value="TestCase3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.TestCase3" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.TestCase13" />
         <item itemvalue="JUnit.AppTest.TestCase11" />
@@ -166,7 +183,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722520673353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Unknown number of digit String Test Case Completed.">
+      <option name="closed" value="true" />
+      <created>1722520863776</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722520863776</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New line contain String Test Case Completed.">
+      <option name="closed" value="true" />
+      <created>1722521044191</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722521044191</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +228,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Empty String Test Case Completed." />
     <MESSAGE value="Two digit String Test Case Completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Two digit String Test Case Completed." />
+    <MESSAGE value="Unknown number of digit String Test Case Completed." />
+    <MESSAGE value="New line contain String Test Case Completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="New line contain String Test Case Completed." />
   </component>
 </project>

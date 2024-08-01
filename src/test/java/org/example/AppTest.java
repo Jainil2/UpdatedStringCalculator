@@ -48,4 +48,10 @@ public class AppTest {
         //new line between numbers
         assertEquals(6,stringcalculator.add("1\n2,3"));
     }
+
+    @Test
+    public void TestCase3() {
+        // Custom delimiter with new lines
+        assertEquals(3,stringcalculator.add("//;\n1;2"));
+    }
 }
