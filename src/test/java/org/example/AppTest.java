@@ -82,7 +82,7 @@ public class AppTest {
     }
 
     @Test
-    public void TestCase7() {
+    public void TestCase71() {
         //Custom delimiter of any length
         assertEquals(6,stringcalculator.add("//[**@]\n1**@2**@3"));
     }
