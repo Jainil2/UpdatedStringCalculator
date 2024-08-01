@@ -3,18 +3,22 @@ package org.example.Service;
 public class StringCalculator {
     public int add(String numbers) {
         try {
-            if (numbers.length() > 1) {
+            String[] numArray =  numbers.split(",");
+            if (numArray.length > 2) {
                 throw new IllegalArgumentException();
             }
-            else if(numbers.isEmpty()) {
+            else if(numArray.length == 0) {
                 return 0;
             }
-            else {
+            else if(numArray.length == 1) {
                 return Integer.parseInt(numbers);
+            }
+            else {
+                return Integer.parseInt(numArray[0]) + Integer.parseInt(numArray[1]);
             }
         }
         catch (IllegalArgumentException e) {
-            System.out.println("Not Valid String for TestCase12!");
+            System.out.println("Not Valid String for TestCase13!");
         }
         return 0;
     }

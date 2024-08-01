@@ -33,7 +33,8 @@ public class AppTest {
 
     @Test
     public void TestCase13() {
-
+        //two numbers
+        assertEquals(3,stringcalculator.add("1,2"));
     }
 
     @Test
